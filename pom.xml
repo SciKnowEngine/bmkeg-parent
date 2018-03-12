@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.isi.bmkeg</groupId>
-	<artifactId>sciknowengine-parent</artifactId>
+	<artifactId>ske-parent</artifactId>
 	<version>1.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>sciknowengine-parent</name>
+	<name>ske-parent</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
