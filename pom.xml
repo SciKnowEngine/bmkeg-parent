@@ -78,60 +78,32 @@
 	</developers>
 
 	<repositories>
-
-		<!-- JBoss Repository -->
+	
 		<repository>
-			<id>org.jboss.repository.releases</id>
-			<name>JBoss Repository - Releases</name>
-			<url>https://repository.jboss.org/nexus/content/repositories/releases</url>
+			<id>spring-plugins</id>
+			<name>Spring Plugins</name>
+			<url>http://repo.spring.io/plugins-release/</url>
 		</repository>
-
-
-		<!-- ISI repositories at colo-pm2.isi.edu -->
-		<repository>
-			<id>isi.nexus.server.thirdparty</id>
-			<name>ISI Third Party Nexus Repository</name>
-			<url>http://colo-pm2.isi.edu:8081/nexus/content/repositories/thirdparty/</url>
-		</repository>
-
-		<repository>
-			<id>isi.nexus.server.snapshots</id>
-			<name>ISI Snapshots Nexus Repository</name>
-			<url>http://colo-pm2.isi.edu:8081/nexus/content/repositories/snapshots/</url>
-		</repository>
-
-		<repository>
-			<id>isi.nexus.server</id>
-			<name>ISI Snapshots Nexus Repository</name>
-			<url>http://colo-pm2.isi.edu:8081/nexus/content/repositories/public/</url>
-		</repository>
-
+	
 		<repository>
 			<id>maven-central</id>
-			<name>maven</name>
+			<name>maven central</name>
 			<url>http://central.maven.org/maven2/</url>
 		</repository>
-
-	</repositories>
-
-	<distributionManagement>
+	
 		<repository>
-			<id>isi.nexus.server.releases</id>
-			<name>ISI releases</name>
-			<url>http://colo-pm2.isi.edu:8081/nexus/content/repositories/releases/</url>
+			<id>maven</id>
+			<name>maven</name>
+			<url>https://repo.maven.apache.org/maven2/</url>
 		</repository>
-		<snapshotRepository>
-			<id>isi.nexus.server.snapshots</id>
-			<name>ISI MRP repository SNAPSHOTS</name>
-			<url>http://colo-pm2.isi.edu:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
-
+		
+	</repositories>
+	
 	<dependencyManagement>
 
 		<dependencies>	
 
-			<!-- Cleartk dependency management. This are taken from the cleartk-release 
+			<!-- Cleartk depenxdency management. This are taken from the cleartk-release 
 				artifact. The cleartk documentation asks that cleartk-release dependency 
 				management be imported into the project poms by adding cleartk-release as 
 				a dependency with scope: import and omitting version information for all 
@@ -327,9 +299,10 @@
 			<dependency>
 				<groupId>org.jgrapht</groupId>
 				<artifactId>jgrapht-jdk1.6</artifactId>
-				<version>0.8.2</version>
+				<version>0.8.1</version>
 				<type>jar</type>
 			</dependency>
+
 		</dependencies>
 
 	</dependencyManagement>
